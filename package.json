@@ -1,0 +1,28 @@
+{
+  "name": "kalmanjs",
+  "version": "1.0.0-beta",
+  "private": false,
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wouterbulten/kalmanjs.git"
+  },
+  "description": "Javascript based Kalman filter for 1D data",
+  "bugs": {
+    "url": "https://github.com/wouterbulten/kalmanjs/issues"
+  },
+  "homepage": "https://github.com/wouterbulten/kalmanjs#readme",
+  "main": "kalman.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "kalman filter",
+    "javascript"
+  ],
+  "author": "Wouter Bulten",
+  "license": "LGPL-3.0"
+}
