@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git://github.com/wouterbulten/kalmanjs.git"
   },
-  "description": "Javascript based Kalman filter for 1D data",
+  "description": "A small library implementing the principle of Kalman filters, without any dependencies, to filter out noise in 1D systems.",
   "bugs": {
     "url": "https://github.com/wouterbulten/kalmanjs/issues"
   },
