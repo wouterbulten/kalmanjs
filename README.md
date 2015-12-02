@@ -2,7 +2,7 @@
 
 Javascript based Kalman filter for 1D data. Sometimes you need a simple noise filter without any dependencies; for those cases *Kalman.js* is perfect.
 
-![Kalman filter applied to a noisy dataset.](/resources/kalman_example.png?raw=true "Kalman filter applied to a noisy dataset.")
+![Kalman filter applied to a noisy dataset.](/resources/kalman-example.png?raw=true "Kalman filter applied to a noisy dataset.")
 
 ## Example use
 
