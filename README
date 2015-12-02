@@ -1,6 +1,11 @@
-# Kalman.js
+# KalmanJS
 
 Javascript based Kalman filter for 1D data. Sometimes you need a simple noise filter without any dependencies; for those cases *Kalman.js* is perfect.
+
+## Background
+
+* [KalmanJS, Lightweight Javascript Library for Noise filtering](https://wouterbulten.nl/blog/tech/lightweight-javascript-library-for-noise-filtering/)
+* [Kalman filters explained: Removing noise from RSSI signals](https://wouterbulten.nl/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals/)
 
 ## Copyright
 
