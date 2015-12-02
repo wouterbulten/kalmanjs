@@ -3,8 +3,10 @@
   "version": "1.0.0-beta",
   "private": false,
   "devDependencies": {
-    "babelify": "^6.3.0",
-    "browserify": "^11.2.0"
+    "babel-cli": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^1.0.2"
   },
   "repository": {
     "type": "git",
@@ -15,14 +17,18 @@
     "url": "https://github.com/wouterbulten/kalmanjs/issues"
   },
   "homepage": "https://github.com/wouterbulten/kalmanjs#readme",
-  "main": "kalman.js",
+  "main": "lib/kalman.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "babel -d lib/ src/",
+    "prepublish": "npm run compile"
   },
   "keywords": [
-    "kalman filter",
+    "kalman",
+    "filter",
+    "math",
+    "noise",
     "javascript"
   ],
-  "author": "Wouter Bulten",
+  "author": "Wouter Bulten (https://wouterbulten.nl)",
   "license": "LGPL-3.0"
 }
