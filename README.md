@@ -4,7 +4,32 @@ Javascript based Kalman filter for 1D data. Sometimes you need a simple noise fi
 
 ![Kalman filter applied to a noisy dataset.](/resources/kalman-example.png?raw=true "Kalman filter applied to a noisy dataset.")
 
-## Example use
+## Installation
+
+The KalmanJS library is a small javascript library and can easily be integrated in to your project manually. Alternatively, the library can be included using npm.
+
+### Node (es6)
+`npm install kalmanjs`
+
+```javascript
+import KalmanFilter from 'kalmanjs';
+
+const kf = new KalmanFilter();
+kf.filter(2);
+```
+
+### Node (es5)
+`npm install kalmanjs`
+
+```javascript
+var KalmanFilter = require('kalmanjs').default;
+
+var kf = new KalmanFilter();
+kf.filter(2);
+
+```
+
+## Applying the filter on a dataset
 
 Using the filter is simple. First we create a simple dataset with random noise:
 
