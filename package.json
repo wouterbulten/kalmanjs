@@ -6,7 +6,8 @@
     "babel-cli": "^6.2.0",
     "babel-preset-es2015": "^6.1.18",
     "eslint": "^1.10.3",
-    "eslint-config-airbnb": "^1.0.2"
+    "eslint-config-airbnb": "^1.0.2",
+    "uglify-js": "^2.6.1"
   },
   "repository": {
     "type": "git",
@@ -16,11 +17,12 @@
   "bugs": {
     "url": "https://github.com/wouterbulten/kalmanjs/issues"
   },
-  "homepage": "https://github.com/wouterbulten/kalmanjs#readme",
+  "homepage": "https://github.com/wouterbulten/kalmanjs",
   "main": "lib/kalman.js",
   "scripts": {
-    "compile": "babel -d lib/ src/",
-    "prepublish": "npm run compile"
+    "compile": "babel --source-maps -d lib/ src/",
+    "minify": "uglifyjs lib/kalman.js --compress --preamble '//kalmanjs, LGPL-3.0, https://github.com/wouterbulten/kalmanjs' --source-map lib/kalman.min.js.map --in-source-map lib/kalman.js.map --mangle -o lib/kalman.min.js",
+    "prepublish": "npm run compile && npm run minify"
   },
   "keywords": [
     "kalman",

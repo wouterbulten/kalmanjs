@@ -1,15 +1,12 @@
-/*!
- * Kalmanjs
- * http://github.com/wouterbulten/kalmanjs
- * Version: 1.0.0-beta
- *
- * Copyright 2015 Wouter Bulten
- * Released under the GNU LESSER GENERAL PUBLIC LICENSE v3
- */
-
 /**
  * KalmanFilter
  * @class
+ * @author Wouter Bulten
+ * @see {@link http://github.com/wouterbulten/kalmanjs}
+ * @version Version: 1.0.0-beta
+ * @copyright Copyright 2015 Wouter Bulten
+ * @license GNU LESSER GENERAL PUBLIC LICENSE v3
+ * @preserve
  */
 class KalmanFilter {
 
