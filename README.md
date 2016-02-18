@@ -4,6 +4,13 @@ Javascript based Kalman filter for 1D data. Sometimes you need a simple noise fi
 
 ![Kalman filter applied to a noisy dataset.](/resources/kalman-example.png?raw=true "Kalman filter applied to a noisy dataset.")
 
+## Background
+
+I wrote two blog posts on explaining Kalman filters in general and applying them on noisy data in particular:
+
+* [KalmanJS, Lightweight Javascript Library for Noise filtering](https://wouterbulten.nl/blog/tech/lightweight-javascript-library-for-noise-filtering/)
+* [Kalman filters explained: Removing noise from RSSI signals](https://wouterbulten.nl/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals/)
+
 ## Installation
 
 The KalmanJS library is a small javascript library and can easily be integrated in to your project manually. Alternatively, the library can be included using npm.
@@ -56,11 +63,6 @@ var dataConstantKalman = noisyDataConstant.map(function(v) {
 ```
 
 See [this blog post](https://wouterbulten.nl/blog/tech/lightweight-javascript-library-for-noise-filtering/) for screenshots and more examples.
-
-## Background
-
-* [KalmanJS, Lightweight Javascript Library for Noise filtering](https://wouterbulten.nl/blog/tech/lightweight-javascript-library-for-noise-filtering/)
-* [Kalman filters explained: Removing noise from RSSI signals](https://wouterbulten.nl/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals/)
 
 ## Copyright
 
