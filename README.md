@@ -42,7 +42,7 @@ Using the filter is simple. First we create a simple dataset with random noise:
 
 ```javascript
 //Generate a simple static dataset
-var dataConstant = Array.apply(null, {length: dataSetSize}).map(function() {
+var dataConstant = Array(dataSetSize).fill('').map(function() {
   return 4;
 });
 //Add noise to data
