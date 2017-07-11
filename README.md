@@ -8,8 +8,8 @@ Javascript based Kalman filter for 1D data. Sometimes you need a simple noise fi
 
 I wrote two blog posts on explaining Kalman filters in general and applying them on noisy data in particular:
 
-* [KalmanJS, Lightweight Javascript Library for Noise filtering](https://wouterbulten.nl/blog/tech/lightweight-javascript-library-for-noise-filtering/)
-* [Kalman filters explained: Removing noise from RSSI signals](https://wouterbulten.nl/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals/)
+* [KalmanJS, Lightweight Javascript Library for Noise filtering](https://www.wouterbulten.nl/blog/tech/lightweight-javascript-library-for-noise-filtering/)
+* [Kalman filters explained: Removing noise from RSSI signals](https://www.wouterbulten.nl/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals/)
 
 ## Questions?
 
