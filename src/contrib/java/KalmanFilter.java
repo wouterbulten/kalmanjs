@@ -1,12 +1,15 @@
-package sye8.utils;
+
 
 /**
  * Simple implementation of the Kalman Filter for 1D data, without any dependencies
  * Originally written in JavaScript by Wouter Bulten
  * 
  * Now rewritten into Java
+ * 2017
  * 
- * @author yesifan
+ * @license GNU LESSER GENERAL PUBLIC LICENSE v3
+ *
+ * @author Sifan Ye
  * 
  * @see https://github.com/wouterbulten/kalmanjs
  *
@@ -66,11 +69,21 @@ public class KalmanFilter {
 	public double lastMeasurement(){
 		return this.x;
 	}
-
+	
+	/**
+	 * Sets measurement noise
+	 *
+	 * @param noise The new measurement noise
+	 */
 	public void setMeasurementNoise(double noise){
 		    this.Q = noise;
 	}
 	
+	/**
+	 * Sets process noise
+	 *
+	 * @param noise The new process noise
+	 */
 	public void setProcessNoise(double noise){
 		    this.R = noise;
 	}
