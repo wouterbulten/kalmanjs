@@ -88,6 +88,10 @@ doi={10.1109/IoTDI.2015.19},
 month={April},}
 ```
 
+## Other languages
+
+Kalman filters can be useful in a broad range of projects. Regularly I get questions whether KalmanJS is available in other languages than Javascript and sometimes another library is available. I would encourage searching for it if you require another implementation. For convenience, this repository contains a *contrib* folder with user-submitted implementations in other languages.
+
 ## Copyright
 
 Copyright (C) 2015 Wouter Bulten
