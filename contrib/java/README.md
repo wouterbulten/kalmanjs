@@ -1,4 +1,4 @@
-# Java Adaptation of KalmanFilter
+# Java Adaptation of KalmanFilter By Sifan Ye
 ## Example Usage
 
         KalmanFilter test = new KalmanFilter(0.008, 0.1);       
