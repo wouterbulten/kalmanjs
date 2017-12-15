@@ -14,12 +14,6 @@
 import math
 
 class KalmanFilter:
-    A = 1
-    B = 0
-    C = 1
-
-    R = 0
-    Q = 0
 
     cov = float('nan')
     x = float('nan')
@@ -29,6 +23,10 @@ class KalmanFilter:
     # R: Process Noise
     # Q: Measurement Noise
     def __init__(self, R, Q):
+        self.A = 1
+        self.B = 0
+        self.C = 1
+
         self.R = R
         self.Q = Q
 
@@ -70,3 +68,12 @@ class KalmanFilter:
     def set_process_noise(self, noise):
         self.R = noise
 
+# Main method as an example
+def main():
+    test = KalmanFilter(0.008, 0.1)
+    testData = [66,64,63,63,63,66,65,67,58]
+    for x in testData:
+        print "Data:", x
+        print "Filtered Data: ", test.filter(x)
+
+main()
