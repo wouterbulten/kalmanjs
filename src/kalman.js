@@ -47,7 +47,7 @@ export default class KalmanFilter {
 
       // Compute prediction
       const predX = this.predict(u);
-      const predCov = this.predictCovariance();
+      const predCov = this.uncertainty();
 
       // Kalman gain
       const K = predCov * this.C * (1 / ((this.C * predCov * this.C) + this.Q));
@@ -70,10 +70,10 @@ export default class KalmanFilter {
   }
   
   /**
-  * Predict next covariance
+  * Return uncertainty of filter
   * @return {Number}
   */
-  predictCovariance() {
+  uncertainty() {
     return ((this.A * this.cov) * this.A) + this.R;
   }
   
