@@ -4,8 +4,8 @@
 * @author Wouter Bulten
 * @see {@link http://github.com/wouterbulten/kalmanjs}
 * @version Version: 1.0.0-beta
-* @copyright Copyright 2015 Wouter Bulten
-* @license GNU LESSER GENERAL PUBLIC LICENSE v3
+* @copyright Copyright 2015-2018 Wouter Bulten
+* @license MIT License
 * @preserve
 */
 export default class KalmanFilter {

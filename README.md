@@ -68,19 +68,51 @@ var dataConstantKalman = noisyDataConstant.map(function(v) {
 
 See [this blog post](https://wouterbulten.nl/blog/tech/lightweight-javascript-library-for-noise-filtering/) for screenshots and more examples.
 
+## Reference
+
+This project was part of my research on indoor localization. Please see my [paper](http://ieeexplore.ieee.org/document/7471364) or this [presentation](http://localhost:4000/blog/tech/iotdi-ic2e-conference-presentation-human-slam/) for more information. You can use the following reference if you want to cite my paper:
+
+> W. Bulten, A. C. V. Rossum and W. F. G. Haselager, "Human SLAM, Indoor Localisation of Devices and Users," *2016 IEEE First International Conference on Internet-of-Things Design and Implementation (IoTDI)*, Berlin, 2016, pp. 211-222. doi: 10.1109/IoTDI.2015.19 [URL](http://ieeexplore.ieee.org/document/7471364)
+
+Or, if you prefer in BibTeX format:
+
+```tex
+@INPROCEEDINGS{7471364, 
+author={W. Bulten and A. C. V. Rossum and W. F. G. Haselager}, 
+booktitle={2016 IEEE First International Conference on Internet-of-Things Design and Implementation (IoTDI)}, 
+title={Human SLAM, Indoor Localisation of Devices and Users}, 
+year={2016}, 
+pages={211-222}, 
+keywords={RSSI;data privacy;indoor environment;ubiquitous computing;FastSLAM;RSSI update;SLAC algorithm;device RSSI;device indoor localisation;device location;device position;environment noise;human SLAM;nontrivial environment;received signal strength indicator;simultaneous localisation and configuration;smart space;user indoor localisation;user motion data;user privacy;Estimation;Performance evaluation;Privacy;Simultaneous localization and mapping;Privacy;Simultaneous localization and mapping;Smart Homes;Ubiquitous computing;Wireless sensor networks}, 
+doi={10.1109/IoTDI.2015.19}, 
+month={April},}
+```
+
+## Other languages
+
+Kalman filters can be useful in a broad range of projects. Regularly I get questions whether KalmanJS is available in other languages than Javascript and sometimes another library is available. I would encourage searching for it if you require another implementation. For convenience, this repository contains a *contrib* folder with user-submitted implementations in other languages.
+
 ## Copyright
 
-Copyright (C) 2015 Wouter Bulten
+MIT License
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU Lesser General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+Copyright (c) 2018 Wouter Bulten
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-You should have received a copy of the GNU Lesser General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
