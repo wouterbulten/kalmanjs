@@ -8,7 +8,7 @@ Now rewritten in Python
 
 License
 -------
-GNU LESSER GENERAL PUBLIC LICENSE v3
+MIT License
 2017
 
 Author
