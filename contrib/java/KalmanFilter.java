@@ -1,5 +1,3 @@
-
-
 /**
  * Simple implementation of the Kalman Filter for 1D data, without any dependencies
  * Originally written in JavaScript by Wouter Bulten
