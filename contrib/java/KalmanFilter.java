@@ -5,7 +5,7 @@
  * Now rewritten into Java
  * 2017
  * 
- * @license GNU LESSER GENERAL PUBLIC LICENSE v3
+ * @license MIT License
  *
  * @author Sifan Ye
  * 
