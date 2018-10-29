@@ -1,5 +1,9 @@
-# Java Adaptation of KalmanFilter By Sifan Ye
-# Updated by Andreas Eppler
+# Java Adaptation of KalmanFilter
+
+Authors:
+- Sifan Ye (initial version)
+- Andreas Eppler (Oct 18 update)
+
 ## Example Usage
 
         KalmanFilter test = new KalmanFilter(0.008, 0.1);       
