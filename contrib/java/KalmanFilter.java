@@ -7,7 +7,8 @@
  *
  * @license MIT License
  *
- * @author Andreas Eppler, Sifan Ye
+ * @author Sifan Ye
+ * @author Andreas Eppler
  *
  * @see https://github.com/wouterbulten/kalmanjs
  *
