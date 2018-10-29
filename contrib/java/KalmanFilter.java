@@ -33,7 +33,6 @@ public class KalmanFilter {
      * @param B Control vector
      * @param C Measurement vector
      */
-
     public KalmanFilter(double R, double Q, double A, double B , double C){
         this.R = R;
         this.Q = Q;
@@ -46,7 +45,12 @@ public class KalmanFilter {
         this.x = Double.NaN; // estimated signal without noise
     }
 
-
+    /**
+     * Constructor
+     *
+     * @param R Process noise
+     * @param Q Measurement noise
+     */
     public KalmanFilter(double R, double Q){
         this.R = R;
         this.Q = Q;
@@ -80,7 +84,12 @@ public class KalmanFilter {
         return this.x;
     }
 
-
+    /**
+     * Filters a measurement
+     *
+     * @param measurement The measurement value to be filtered
+     * @return The filtered value
+     */
     public double filter(double measurement){
         double u = 0;
         if (Double.isNaN(this.x)) {
@@ -102,7 +111,7 @@ public class KalmanFilter {
     
 
     /**
-     *
+     * Set the last measurement.
      * @return The last measurement fed into the filter
      */
     public double lastMeasurement(){
