@@ -9,7 +9,7 @@ Authors:
 int main () {
     
     double ret;
-    SampleClass *sampleClass = [[SampleClass alloc]init];
+    KalmanFilter *kalmanFilter = [[SampleClass alloc]init];
     
     NSMutableArray *pointA10Recordings= [[NSMutableArray alloc] init];
     [pointA10Recordings addObject:[NSNumber numberWithDouble:12.59]];
@@ -27,7 +27,7 @@ int main () {
     
     for(int i=0;i<10;i++){
         double value   = [[pointA10Recordings objectAtIndex:i] doubleValue];
-        ret = [sampleClass filter:value];
+        ret = [kalmanFilter filter:value];
         NSLog(@"Filtered value is : %.2f\n", ret );
     }
     return 0;
