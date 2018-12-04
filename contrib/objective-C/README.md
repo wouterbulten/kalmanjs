@@ -9,7 +9,7 @@ Authors:
 int main () {
     
     double ret;
-    KalmanFilter *kalmanFilter = [[SampleClass alloc]init];
+    KalmanFilter *kalmanFilter = [[KalmanFilter alloc]init];
     
     NSMutableArray *pointA10Recordings= [[NSMutableArray alloc] init];
     [pointA10Recordings addObject:[NSNumber numberWithDouble:12.59]];
