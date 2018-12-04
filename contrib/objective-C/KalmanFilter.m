@@ -1,5 +1,15 @@
 /**
+ * Simple implementation of the Kalman Filter for 1D data.
+ * Originally written in JavaScript by Wouter Bulten.
+ *
+ * Now rewritten into Objective-C
+ *
+ * @license MIT License
+ *
  * @author Biraj Dhakal
+ *
+ * @see https://github.com/wouterbulten/kalmanjs
+ *
  */
 
 #import <Foundation/Foundation.h>
@@ -26,9 +36,9 @@ double x=NAN;
     }else{
         double predX = (A*x) + (B*u);
         double predCov = ((A * cov) * A) + R;
-        
+
         double K = predCov * C * (1/((C * predCov * C) + Q));
-        
+
         x = predX + K *(measurement - (C * predX));
         cov = predCov - (K * C * predCov);
     }
@@ -46,9 +56,9 @@ double x=NAN;
     }else{
         double predX = (A*x) + (B*u);
         double predCov = ((A * cov) * A) + R;
-        
+
         double K = predCov * C * (1/((C * predCov * C) + Q));
-        
+
         x = predX + K *(measurement - (C * predX));
         cov = predCov - (K * C * predCov);
     }
@@ -56,4 +66,3 @@ double x=NAN;
 }
 
 @end
-

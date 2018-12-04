@@ -1,16 +1,15 @@
 # Objective-C Adaptation of KalmanFilter
 
 Authors:
-- Sifan Ye (initial version)
-- Biraj Dhakal (Nov 21 update)
+- Biraj Dhakal
 
 ## Example Usage
 
 int main () {
-    
+
     double ret;
     KalmanFilter *kalmanFilter = [[KalmanFilter alloc]init];
-    
+
     NSMutableArray *pointA10Recordings= [[NSMutableArray alloc] init];
     [pointA10Recordings addObject:[NSNumber numberWithDouble:12.59]];
     [pointA10Recordings addObject:[NSNumber numberWithDouble:8.91]];
@@ -22,9 +21,9 @@ int main () {
     [pointA10Recordings addObject:[NSNumber numberWithDouble:10.0]];
     [pointA10Recordings addObject:[NSNumber numberWithDouble:12.59]];
     [pointA10Recordings addObject:[NSNumber numberWithDouble:10.0]];
-    
-    
-    
+
+
+
     for(int i=0;i<10;i++){
         double value   = [[pointA10Recordings objectAtIndex:i] doubleValue];
         ret = [kalmanFilter filter:value];
