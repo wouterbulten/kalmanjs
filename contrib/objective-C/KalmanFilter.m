@@ -1,18 +1,5 @@
 /**
- * Simple implementation of the Kalman Filter for 1D data.
- * Originally written in JavaScript by Wouter Bulten
- *
- * Now rewritten into Objective-C
- * 2018
- *
- * @license MIT License
- *
- * @author Sifan Ye
- * @author Andreas Eppler
  * @author Biraj Dhakal
- *
- * @see https://github.com/wouterbulten/kalmanjs
- *
  */
 
 #import <Foundation/Foundation.h>
