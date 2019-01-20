@@ -3,3 +3,4 @@ resources
 .babelrc
 .eslintrc
 contrib
+dist
