@@ -33,6 +33,14 @@ Include the `kalman.js` or `kalman.min.js` from the `dist` folder on your webpag
 </script>
 ```
 
+Should output (with default settings):
+
+```
+3
+2.3333333333333335
+1.5000000000000002
+```
+
 ### Node (es6)
 `npm install kalmanjs`
 
@@ -40,18 +48,38 @@ Include the `kalman.js` or `kalman.min.js` from the `dist` folder on your webpag
 import KalmanFilter from 'kalmanjs';
 
 const kf = new KalmanFilter();
-kf.filter(2);
+console.log(kf.filter(3));
+console.log(kf.filter(2));
+console.log(kf.filter(1));
+```
+
+Should output (with default settings):
+
+```
+3
+2.3333333333333335
+1.5000000000000002
 ```
 
 ### Node (es5)
 `npm install kalmanjs`
 
 ```javascript
-var KalmanFilter = require('kalmanjs').default;
+var KalmanFilter = require('kalmanjs');
 
 var kf = new KalmanFilter();
-kf.filter(2);
+console.log(kf.filter(3));
+console.log(kf.filter(2));
+console.log(kf.filter(1));
 
+```
+
+Should output (with default settings):
+
+```
+3
+2.3333333333333335
+1.5000000000000002
 ```
 
 ## Applying the filter on a dataset
