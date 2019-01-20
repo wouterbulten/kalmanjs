@@ -1,6 +1,6 @@
 {
   "name": "kalmanjs",
-  "version": "1.0.0-beta",
+  "version": "1.1.0-beta",
   "private": false,
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -24,7 +24,8 @@
   "scripts": {
     "compile": "npx babel src --source-maps --out-dir lib",
     "minify": "npx uglifyjs dist/kalman.js --beautify \"beautify=false, preamble='/*kalmanjs, Wouter Bulten, MIT, https://github.com/wouterbulten/kalmanjs */'\" --compress --source-map \"content='dist/kalman.js.map'\" --mangle -o dist/kalman.min.js",
-    "build": "npx rollup -c"
+    "build": "npx rollup -c",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "kalman",

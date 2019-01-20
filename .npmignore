@@ -4,3 +4,4 @@ resources
 .eslintrc
 contrib
 dist
+rollup.config.js
