@@ -13,11 +13,25 @@ I wrote two blog posts on explaining Kalman filters in general and applying them
 
 ## Questions?
 
-Please see the blog post ([KalmanJS, Lightweight Javascript Library for Noise filtering](https://wouterbulten.nl/blog/tech/lightweight-javascript-library-for-noise-filtering/)) for more information about using this library. Any questions can be posted there as comments. 
+Please see the blog post ([KalmanJS, Lightweight Javascript Library for Noise filtering](https://wouterbulten.nl/blog/tech/lightweight-javascript-library-for-noise-filtering/)) for more information about using this library. Any questions can be posted there as comments.
 
 ## Installation
 
 The KalmanJS library is a small javascript library and can easily be integrated in to your project manually. Alternatively, the library can be included using npm.
+
+### In the browser
+
+Include the `kalman.js` or `kalman.min.js` from the `dist` folder on your webpage, the filter can then be used directly.
+
+```html
+<script src="kalman.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  var kf = new KalmanFilter();
+  console.log(kf.filter(3));
+  console.log(kf.filter(2));
+  console.log(kf.filter(1));
+</script>
+```
 
 ### Node (es6)
 `npm install kalmanjs`
@@ -77,14 +91,14 @@ This project was part of my research on indoor localization. Please see my [pape
 Or, if you prefer in BibTeX format:
 
 ```tex
-@INPROCEEDINGS{7471364, 
-author={W. Bulten and A. C. V. Rossum and W. F. G. Haselager}, 
-booktitle={2016 IEEE First International Conference on Internet-of-Things Design and Implementation (IoTDI)}, 
-title={Human SLAM, Indoor Localisation of Devices and Users}, 
-year={2016}, 
-pages={211-222}, 
-keywords={RSSI;data privacy;indoor environment;ubiquitous computing;FastSLAM;RSSI update;SLAC algorithm;device RSSI;device indoor localisation;device location;device position;environment noise;human SLAM;nontrivial environment;received signal strength indicator;simultaneous localisation and configuration;smart space;user indoor localisation;user motion data;user privacy;Estimation;Performance evaluation;Privacy;Simultaneous localization and mapping;Privacy;Simultaneous localization and mapping;Smart Homes;Ubiquitous computing;Wireless sensor networks}, 
-doi={10.1109/IoTDI.2015.19}, 
+@INPROCEEDINGS{7471364,
+author={W. Bulten and A. C. V. Rossum and W. F. G. Haselager},
+booktitle={2016 IEEE First International Conference on Internet-of-Things Design and Implementation (IoTDI)},
+title={Human SLAM, Indoor Localisation of Devices and Users},
+year={2016},
+pages={211-222},
+keywords={RSSI;data privacy;indoor environment;ubiquitous computing;FastSLAM;RSSI update;SLAC algorithm;device RSSI;device indoor localisation;device location;device position;environment noise;human SLAM;nontrivial environment;received signal strength indicator;simultaneous localisation and configuration;smart space;user indoor localisation;user motion data;user privacy;Estimation;Performance evaluation;Privacy;Simultaneous localization and mapping;Privacy;Simultaneous localization and mapping;Smart Homes;Ubiquitous computing;Wireless sensor networks},
+doi={10.1109/IoTDI.2015.19},
 month={April},}
 ```
 
@@ -115,4 +129,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
