@@ -65,7 +65,7 @@ Should output (with default settings):
 `npm install kalmanjs`
 
 ```javascript
-var KalmanFilter = require('kalmanjs');
+var KalmanFilter = require('kalmanjs').default;
 
 var kf = new KalmanFilter();
 console.log(kf.filter(3));
