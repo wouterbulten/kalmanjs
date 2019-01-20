@@ -1,9 +1,6 @@
 /*kalmanjs, Wouter Bulten, MIT, https://github.com/wouterbulten/kalmanjs */
-(function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-  typeof define === 'function' && define.amd ? define(factory) :
-  (global = global || self, global.KalmanFilter = factory());
-}(this, function () { 'use strict';
+var KalmanFilter = (function () {
+  'use strict';
 
   function _classCallCheck(instance, Constructor) {
     if (!(instance instanceof Constructor)) {
@@ -162,5 +159,5 @@
 
   return KalmanFilter;
 
-}));
+}());
 //# sourceMappingURL=kalman.js.map
