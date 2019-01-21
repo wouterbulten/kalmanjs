@@ -17,6 +17,8 @@ Please see the blog post ([KalmanJS, Lightweight Javascript Library for Noise fi
 
 The KalmanJS library is a small javascript library and can easily be integrated in to your project manually. Alternatively, the library can be included using npm.
 
+[Try KalmanJS in the browser on Runkit](https://runkit.com/embed/0kyrdew43pyw)
+
 ### In the browser
 
 Include the `kalman.js` or `kalman.min.js` from the `dist` folder on your webpage, the filter can then be used directly.
