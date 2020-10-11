@@ -15,10 +15,11 @@ Please see the blog post ([KalmanJS, Lightweight Javascript Library for Noise fi
 
 ## Examples
 
-An collection of examples can be found here: https://github.com/benwinding/kalmanjs-examples
+An collection of examples can be found here: 
 
-- [Demo 1](https://benwinding.github.io/kalmanjs-examples/examples/demo1.html)
-- [Demo 2 (Vuejs)](https://benwinding.github.io/kalmanjs-examples/examples/demo2-vue.html)
+- A [standalone demo of a simple system](https://benwinding.github.io/kalmanjs-examples/examples/demo1.html) modeled with the filter. ([source code](https://github.com/benwinding/kalmanjs-examples))
+- [Interactive demo](https://benwinding.github.io/kalmanjs-examples/examples/demo2-vue.html) created with VueJs that allows for experimenting with the different settings. ([source code](https://github.com/benwinding/kalmanjs-examples))
+- Please take a look at this [blog post](https://www.wouterbulten.nl/blog/tech/lightweight-javascript-library-for-noise-filtering/) for some examples and explanation of the variables.
 
 ## Installation
 
