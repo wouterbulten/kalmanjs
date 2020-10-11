@@ -13,6 +13,13 @@ I wrote two blog posts on explaining Kalman filters in general and applying them
 
 Please see the blog post ([KalmanJS, Lightweight Javascript Library for Noise filtering](https://wouterbulten.nl/blog/tech/lightweight-javascript-library-for-noise-filtering/)) for more information about using this library. Any questions can be posted there as comments.
 
+## Examples
+
+An collection of examples can be found here: https://github.com/benwinding/kalmanjs-examples
+
+- [Demo 1](https://benwinding.github.io/kalmanjs-examples/examples/demo1.html)
+- [Demo 2 (Vuejs)](https://benwinding.github.io/kalmanjs-examples/examples/demo2-vue.html)
+
 ## Installation
 
 The KalmanJS library is a small javascript library and can easily be integrated in to your project manually. Alternatively, the library can be included using npm.
