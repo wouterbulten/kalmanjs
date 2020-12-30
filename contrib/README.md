@@ -11,3 +11,4 @@ If you have a translation that you would like to share please feel free to submi
 - Java by @ysf199711
 - Python by @ysf199711
 - Objective-C by @bidh
+- SQL by @archetypesc
