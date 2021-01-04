@@ -7,6 +7,8 @@ I wrote two blog posts on explaining Kalman filters in general and applying them
 * [KalmanJS, Lightweight Javascript Library for Noise filtering](https://www.wouterbulten.nl/blog/tech/lightweight-javascript-library-for-noise-filtering/)
 * [Kalman filters explained: Removing noise from RSSI signals](https://www.wouterbulten.nl/blog/tech/kalman-filters-explained-removing-noise-from-rssi-signals/)
 
+For other languages than Javascript, please see the note on the [contrib folder](https://github.com/wouterbulten/kalmanjs#other-languages).
+
 ![Kalman filter applied to a noisy dataset.](/resources/kalman-example.png?raw=true "Kalman filter applied to a noisy dataset.")
 
 ## Questions?
@@ -140,7 +142,7 @@ month={April},}
 
 ## Other languages
 
-Kalman filters can be useful in a broad range of projects. Regularly I get questions whether KalmanJS is available in other languages than Javascript and sometimes another library is available. I would encourage searching for it if you require another implementation. For convenience, this repository contains a *contrib* folder with user-submitted implementations in other languages.
+Kalman filters can be useful in a broad range of projects. Regularly I get questions whether KalmanJS is available in other languages than Javascript and sometimes another library is available. I would encourage searching for it if you require another implementation. For convenience, this repository contains a [*contrib* folder](https://github.com/wouterbulten/kalmanjs/tree/master/contrib) with user-submitted implementations in other languages.
 
 ## Copyright
 
