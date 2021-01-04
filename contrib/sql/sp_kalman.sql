@@ -1,3 +1,15 @@
+/**
+ * SQL adaptation of the Kalman Filter for 1D data.
+ * Originally written in JavaScript by Wouter Bulten.
+ *
+ * @license MIT License
+ *
+ * @author trademark18 (on behalf of archetypesc)
+ *
+ * @see https://github.com/wouterbulten/kalmanjs
+ *
+ */
+
 SET ANSI_NULLS ON
 GO
 
