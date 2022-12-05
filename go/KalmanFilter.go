@@ -20,14 +20,13 @@ import (
 )
 
 type KalmanFilter struct {
-	a            float64
-	b            float64
-	c            float64
-	r            float64
-	q            float64
-	cov          float64
-	x            float64
-	isControlled bool
+	a   float64
+	b   float64
+	c   float64
+	r   float64
+	q   float64
+	cov float64
+	x   float64
 }
 
 /**
@@ -48,14 +47,11 @@ func NewKalmanFilter(r, q float64, options ...float64) (*KalmanFilter, error) {
 	kf.q = q
 	kf.cov = math.NaN()
 	kf.x = math.NaN()
-	kf.isControlled = false
 
 	if len(options) == 3 {
 		kf.a = options[0]
 		kf.b = options[1]
 		kf.c = options[2]
-
-		kf.isControlled = true
 	} else if len(options) == 0 {
 		kf.a = 1
 		kf.b = 0
@@ -75,20 +71,14 @@ func NewKalmanFilter(r, q float64, options ...float64) (*KalmanFilter, error) {
  */
 func (kf *KalmanFilter) Filter(measurement float64, u ...float64) (float64, error) {
 	var err error
-	var U float64
-	if kf.isControlled {
-		if len(u) == 1 {
-			U = u[0]
-		} else if len(u) == 0 {
-			err = errors.New("parameter u is required when initialized with controlled inputs")
-		} else {
-			err = errors.New("only 1 parameter as u should be passed")
-		}
-	} else if !kf.isControlled && len(u) != 0 {
-		err = errors.New("parameter u is not required when initialized without controlled inputs")
-	} else {
-		U = 0
+	U := float64(0)
+
+	if len(u) == 1 {
+		U = u[0]
+	} else if len(u) > 1 {
+		err = errors.New("only 1 parameter as u should be passed")
 	}
+
 	if err == nil {
 		if math.IsNaN(kf.x) {
 			kf.x = (1 / kf.c) * measurement
