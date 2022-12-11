@@ -12,3 +12,4 @@ If you have a translation that you would like to share please feel free to submi
 - Python by @ysf199711
 - Objective-C by @bidh
 - SQL by @archetypesc
+- Go by @RishabhKatiyar
