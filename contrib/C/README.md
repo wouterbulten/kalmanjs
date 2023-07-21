@@ -4,7 +4,7 @@ Authors:
 - Vinay Divakar
 
 ## Example Usage
-
+```
 #include "KalmanFilter.h"
 
 static const struct kalman_filter_coefficients_t kalman_coefficients = {
@@ -64,5 +64,7 @@ int main() {
     printf("%.4f,\r\n", rssi_filter.output); // print the filtered output
   }
 }
+```
 
 ## Results
+![image](https://github.com/deeplyembeddedWP/kalmanjs/assets/23131959/c8b26a10-04be-486c-9408-6cc2b92d0bf4)
