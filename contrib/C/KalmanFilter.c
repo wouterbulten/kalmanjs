@@ -18,7 +18,7 @@
  * @brief initializes the filter
  *
  * @param this points to the filter object
- * @return filtered value
+ * @return None
  */
 void kalman_filter_init(struct kalman_filter_t *this) {
   this->covariance = NAN;
@@ -29,6 +29,7 @@ void kalman_filter_init(struct kalman_filter_t *this) {
  * @brief filters a measurement
  *
  * @param this points to the filter object
+ * @param coefficients points to filter co-efficients object
  * @param measurement meseasurement value to be filtered
  * @return filtered value
  */
