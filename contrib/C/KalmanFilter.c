@@ -1,4 +1,3 @@
-#include "KalmanFilter.h"
 /**
  * @brief 1D kalman filter to smoothen a noisy signal
  * Originally written in JavaScript by Wouter Bulten.
