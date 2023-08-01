@@ -13,3 +13,4 @@ If you have a translation that you would like to share please feel free to submi
 - Objective-C by @bidh
 - SQL by @archetypesc
 - Go by @RishabhKatiyar
+- C by @deeplyembeddedWP
