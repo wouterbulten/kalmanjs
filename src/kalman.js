@@ -33,15 +33,23 @@ export default class KalmanFilter {
 
   /**
   * Filter a new value
-  * @param  {Number} z Measurement
+  * @param  {Number} z Measurement. Either a value or an array with measurement and error.
   * @param  {Number} u Control
   * @return {Number}
   */
   filter(z, u = 0) {
 
+    let zVal = z;
+    let zErr = this.Q;
+
+    if (Array.isArray(z)) {
+      zVal = z[0];
+      zErr = z[1];
+    }
+
     if (isNaN(this.x)) {
-      this.x = (1 / this.C) * z;
-      this.cov = (1 / this.C) * this.Q * (1 / this.C);
+      this.x = (1 / this.C) * zVal;
+      this.cov = (1 / this.C) * zErr * (1 / this.C);
     }
     else {
 
@@ -50,10 +58,10 @@ export default class KalmanFilter {
       const predCov = this.uncertainty();
 
       // Kalman gain
-      const K = predCov * this.C * (1 / ((this.C * predCov * this.C) + this.Q));
+      const K = predCov * this.C * (1 / ((this.C * predCov * this.C) + zErr));
 
       // Correction
-      this.x = predX + K * (z - (this.C * predX));
+      this.x = predX + K * (zVal - (this.C * predX));
       this.cov = predCov - (K * this.C * predCov);
     }
 
@@ -68,7 +76,7 @@ export default class KalmanFilter {
   predict(u = 0) {
     return (this.A * this.x) + (this.B * u);
   }
-  
+
   /**
   * Return uncertainty of filter
   * @return {Number}
@@ -76,7 +84,7 @@ export default class KalmanFilter {
   uncertainty() {
     return ((this.A * this.cov) * this.A) + this.R;
   }
-  
+
   /**
   * Return the last filtered measurement
   * @return {Number}
